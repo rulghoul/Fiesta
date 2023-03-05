@@ -1,2 +1,7 @@
 /requirements.txt
 /virtual
+
+*.log
+*.pot
+*.pyc
+__pycache__/

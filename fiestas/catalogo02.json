@@ -1,0 +1,1016 @@
+[
+
+    {
+        "model": "salones.clasifservicio",
+        "pk": 1,
+        "fields": {
+            "cvetiposervicio": 1,
+            "cveclasifservicio": "1",
+            "descripcion": "MENU",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 2,
+        "fields": {
+            "cvetiposervicio": 1,
+            "cveclasifservicio": "2",
+            "descripcion": "MESA DE DULCES",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 3,
+        "fields": {
+            "cvetiposervicio": 1,
+            "cveclasifservicio": "3",
+            "descripcion": "CHILAQUILES",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 4,
+        "fields": {
+            "cvetiposervicio": 1,
+            "cveclasifservicio": "4",
+            "descripcion": "FUENTE CHOCOLATE",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 5,
+        "fields": {
+            "cvetiposervicio": 2,
+            "cveclasifservicio": "1",
+            "descripcion": "PERSONAJES RECEPCION",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 6,
+        "fields": {
+            "cvetiposervicio": 2,
+            "cveclasifservicio": "2",
+            "descripcion": "MOMENTOS TEMATICOS",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 7,
+        "fields": {
+            "cvetiposervicio": 2,
+            "cveclasifservicio": "3",
+            "descripcion": "ANIMACION EN CENA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 8,
+        "fields": {
+            "cvetiposervicio": 3,
+            "cveclasifservicio": "1",
+            "descripcion": "ARREGLO POR MESA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 9,
+        "fields": {
+            "cvetiposervicio": 3,
+            "cveclasifservicio": "2",
+            "descripcion": "DECORACION ENTRADA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 10,
+        "fields": {
+            "cvetiposervicio": 4,
+            "cveclasifservicio": "1",
+            "descripcion": "PROFESIONAL",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 11,
+        "fields": {
+            "cvetiposervicio": 4,
+            "cveclasifservicio": "2",
+            "descripcion": "LINEAL",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 12,
+        "fields": {
+            "cvetiposervicio": 5,
+            "cveclasifservicio": "1",
+            "descripcion": "COCTELERIA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 13,
+        "fields": {
+            "cvetiposervicio": 5,
+            "cveclasifservicio": "2",
+            "descripcion": "BRINDIS",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 14,
+        "fields": {
+            "cvetiposervicio": 5,
+            "cveclasifservicio": "3",
+            "descripcion": "BOTELLA LABRADA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 15,
+        "fields": {
+            "cvetiposervicio": 5,
+            "cveclasifservicio": "4",
+            "descripcion": "BOTELLA SIN LABRAR",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 16,
+        "fields": {
+            "cvetiposervicio": 5,
+            "cveclasifservicio": "5",
+            "descripcion": "TEQUILADA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 17,
+        "fields": {
+            "cvetiposervicio": 5,
+            "cveclasifservicio": "6",
+            "descripcion": "VINO",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 18,
+        "fields": {
+            "cvetiposervicio": 6,
+            "cveclasifservicio": "1",
+            "descripcion": "CIVIL",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 19,
+        "fields": {
+            "cvetiposervicio": 6,
+            "cveclasifservicio": "2",
+            "descripcion": "RELIGIOSA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 20,
+        "fields": {
+            "cvetiposervicio": 6,
+            "cveclasifservicio": "3",
+            "descripcion": "PAPELERIA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 21,
+        "fields": {
+            "cvetiposervicio": 6,
+            "cveclasifservicio": "4",
+            "descripcion": "VIDEO Y FOTOGRAFIA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 22,
+        "fields": {
+            "cvetiposervicio": 7,
+            "cveclasifservicio": "1",
+            "descripcion": "ILUMINACION",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 23,
+        "fields": {
+            "cvetiposervicio": 7,
+            "cveclasifservicio": "2",
+            "descripcion": "ESTRADO",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 24,
+        "fields": {
+            "cvetiposervicio": 7,
+            "cveclasifservicio": "3",
+            "descripcion": "GRANDSUPPORT",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 25,
+        "fields": {
+            "cvetiposervicio": 8,
+            "cveclasifservicio": "1",
+            "descripcion": "COORDINADORES",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 26,
+        "fields": {
+            "cvetiposervicio": 8,
+            "cveclasifservicio": "2",
+            "descripcion": "PERSONAL DE RECEPCION",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 27,
+        "fields": {
+            "cvetiposervicio": 8,
+            "cveclasifservicio": "3",
+            "descripcion": "MAESTRO DE CEREMONIAS",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 28,
+        "fields": {
+            "cvetiposervicio": 8,
+            "cveclasifservicio": "4",
+            "descripcion": "PERSONAL DE SERVICIO",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 29,
+        "fields": {
+            "cvetiposervicio": 8,
+            "cveclasifservicio": "5",
+            "descripcion": "PERSONAL DE SEGURIDAD",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 30,
+        "fields": {
+            "cvetiposervicio": 9,
+            "cveclasifservicio": "1",
+            "descripcion": "SALON",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 31,
+        "fields": {
+            "cvetiposervicio": 9,
+            "cveclasifservicio": "2",
+            "descripcion": "RECINTO",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 32,
+        "fields": {
+            "cvetiposervicio": 9,
+            "cveclasifservicio": "3",
+            "descripcion": "JARDIN",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 33,
+        "fields": {
+            "cvetiposervicio": 9,
+            "cveclasifservicio": "4",
+            "descripcion": "OTRO",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 34,
+        "fields": {
+            "cvetiposervicio": 10,
+            "cveclasifservicio": "1",
+            "descripcion": "MESA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 35,
+        "fields": {
+            "cvetiposervicio": 10,
+            "cveclasifservicio": "2",
+            "descripcion": "SILLA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 36,
+        "fields": {
+            "cvetiposervicio": 11,
+            "cveclasifservicio": "1",
+            "descripcion": "GRUPO MUSICAL",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 37,
+        "fields": {
+            "cvetiposervicio": 11,
+            "cveclasifservicio": "2",
+            "descripcion": "MARIACHI",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 38,
+        "fields": {
+            "cvetiposervicio": 11,
+            "cveclasifservicio": "3",
+            "descripcion": "DJ",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 39,
+        "fields": {
+            "cvetiposervicio": 11,
+            "cveclasifservicio": "4",
+            "descripcion": "BANDA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 40,
+        "fields": {
+            "cvetiposervicio": 11,
+            "cveclasifservicio": "5",
+            "descripcion": "VIOLINES",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 41,
+        "fields": {
+            "cvetiposervicio": 11,
+            "cveclasifservicio": "6",
+            "descripcion": "OTRO",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 42,
+        "fields": {
+            "cvetiposervicio": 12,
+            "cveclasifservicio": "1",
+            "descripcion": "VASO",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 43,
+        "fields": {
+            "cvetiposervicio": 12,
+            "cveclasifservicio": "2",
+            "descripcion": "COPIAS BRINDIS",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 44,
+        "fields": {
+            "cvetiposervicio": 12,
+            "cveclasifservicio": "3",
+            "descripcion": "AGITADORES",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 45,
+        "fields": {
+            "cvetiposervicio": 12,
+            "cveclasifservicio": "4",
+            "descripcion": "CENICEROS",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 46,
+        "fields": {
+            "cvetiposervicio": 12,
+            "cveclasifservicio": "5",
+            "descripcion": "TEQUILEROS",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 47,
+        "fields": {
+            "cvetiposervicio": 12,
+            "cveclasifservicio": "6",
+            "descripcion": "TARROS",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 48,
+        "fields": {
+            "cvetiposervicio": 12,
+            "cveclasifservicio": "7",
+            "descripcion": "RECUERDOS",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 49,
+        "fields": {
+            "cvetiposervicio": 13,
+            "cveclasifservicio": "1",
+            "descripcion": "MAPPING",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 50,
+        "fields": {
+            "cvetiposervicio": 13,
+            "cveclasifservicio": "2",
+            "descripcion": "PANTALLA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 51,
+        "fields": {
+            "cvetiposervicio": 13,
+            "cveclasifservicio": "3",
+            "descripcion": "GRAFITTI",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 52,
+        "fields": {
+            "cvetiposervicio": 14,
+            "cveclasifservicio": "1",
+            "descripcion": "CABINA FOTOGRAFICA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 53,
+        "fields": {
+            "cvetiposervicio": 14,
+            "cveclasifservicio": "2",
+            "descripcion": "VIDEO FILMACION",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.clasifservicio",
+        "pk": 54,
+        "fields": {
+            "cvetiposervicio": 14,
+            "cveclasifservicio": "3",
+            "descripcion": "FOTOGRAFIA",
+            "bandactivo": true
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 1,
+        "fields": {
+            "cveclasifservicio": 1,
+            "cvedesgloseservicio": "1",
+            "descripcion": "MENU SALON",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 2,
+        "fields": {
+            "cveclasifservicio": 1,
+            "cvedesgloseservicio": "2",
+            "descripcion": "MENU EXTERNO",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 3,
+        "fields": {
+            "cveclasifservicio": 1,
+            "cvedesgloseservicio": "3",
+            "descripcion": "MENU INFANTIL",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 4,
+        "fields": {
+            "cveclasifservicio": 1,
+            "cvedesgloseservicio": "4",
+            "descripcion": "PASTEL",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 5,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "1",
+            "descripcion": "PERFORMANCE",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 6,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "2",
+            "descripcion": "APERTURA PISTA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 7,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "3",
+            "descripcion": "SALSA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 8,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "4",
+            "descripcion": "BATUCADA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 9,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "5",
+            "descripcion": "BANDA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 10,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "6",
+            "descripcion": "MOMENTO DISCO",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 11,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "7",
+            "descripcion": "MARIACHI",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 12,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "8",
+            "descripcion": "TIMBIRICHE",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 13,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "9",
+            "descripcion": "PRESENTACION",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 14,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "10",
+            "descripcion": "PRODUCCION ",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 15,
+        "fields": {
+            "cveclasifservicio": 6,
+            "cvedesgloseservicio": "11",
+            "descripcion": "OTROS",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 16,
+        "fields": {
+            "cveclasifservicio": 9,
+            "cvedesgloseservicio": "1",
+            "descripcion": "OSCARES VOLUMETRICOS",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 17,
+        "fields": {
+            "cveclasifservicio": 9,
+            "cvedesgloseservicio": "2",
+            "descripcion": "LETRAS GIGANTES",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 18,
+        "fields": {
+            "cveclasifservicio": 9,
+            "cvedesgloseservicio": "3",
+            "descripcion": "FIGURA DE HIELO",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 19,
+        "fields": {
+            "cveclasifservicio": 9,
+            "cvedesgloseservicio": "4",
+            "descripcion": "GLOBOS",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 20,
+        "fields": {
+            "cveclasifservicio": 9,
+            "cvedesgloseservicio": "5",
+            "descripcion": "OTROS",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 21,
+        "fields": {
+            "cveclasifservicio": 22,
+            "cvedesgloseservicio": "1",
+            "descripcion": "ROBOTICAS",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 22,
+        "fields": {
+            "cveclasifservicio": 22,
+            "cvedesgloseservicio": "2",
+            "descripcion": "ROBOTICAS BEAM",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 23,
+        "fields": {
+            "cveclasifservicio": 22,
+            "cvedesgloseservicio": "3",
+            "descripcion": "REFLECTORES",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 24,
+        "fields": {
+            "cveclasifservicio": 25,
+            "cvedesgloseservicio": "1",
+            "descripcion": "COORDINADOR DE SERVICIO",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 25,
+        "fields": {
+            "cveclasifservicio": 25,
+            "cvedesgloseservicio": "2",
+            "descripcion": "COORDINADOR DE PERSONAL ARTISTICO",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 26,
+        "fields": {
+            "cveclasifservicio": 25,
+            "cvedesgloseservicio": "3",
+            "descripcion": "COORDINADOR MUSICAL",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 27,
+        "fields": {
+            "cveclasifservicio": 25,
+            "cvedesgloseservicio": "4",
+            "descripcion": "COORDINADOR DE PRODUCCION",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 28,
+        "fields": {
+            "cveclasifservicio": 25,
+            "cvedesgloseservicio": "5",
+            "descripcion": "COORDINADOR DE LOGISTICA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 29,
+        "fields": {
+            "cveclasifservicio": 26,
+            "cvedesgloseservicio": "1",
+            "descripcion": "EDECANES HOMBRES",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 30,
+        "fields": {
+            "cveclasifservicio": 26,
+            "cvedesgloseservicio": "2",
+            "descripcion": "EDECANES MUJERES",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 31,
+        "fields": {
+            "cveclasifservicio": 26,
+            "cvedesgloseservicio": "3",
+            "descripcion": "HOSTESS",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 32,
+        "fields": {
+            "cveclasifservicio": 28,
+            "cvedesgloseservicio": "1",
+            "descripcion": "GERENTE SERVICIO",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 33,
+        "fields": {
+            "cveclasifservicio": 28,
+            "cvedesgloseservicio": "2",
+            "descripcion": "CAPITANES",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 34,
+        "fields": {
+            "cveclasifservicio": 28,
+            "cvedesgloseservicio": "3",
+            "descripcion": "MESEROS",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 35,
+        "fields": {
+            "cveclasifservicio": 28,
+            "cvedesgloseservicio": "4",
+            "descripcion": "MESEROS ESPECIALES",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 36,
+        "fields": {
+            "cveclasifservicio": 34,
+            "cvedesgloseservicio": "1",
+            "descripcion": "REDONDA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 37,
+        "fields": {
+            "cveclasifservicio": 34,
+            "cvedesgloseservicio": "2",
+            "descripcion": "CUADRADA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 38,
+        "fields": {
+            "cveclasifservicio": 34,
+            "cvedesgloseservicio": "3",
+            "descripcion": "ILUMINADA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 39,
+        "fields": {
+            "cveclasifservicio": 35,
+            "cvedesgloseservicio": "1",
+            "descripcion": "PLEGABLE",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 40,
+        "fields": {
+            "cveclasifservicio": 35,
+            "cvedesgloseservicio": "2",
+            "descripcion": "TIFFANI",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 41,
+        "fields": {
+            "cveclasifservicio": 35,
+            "cvedesgloseservicio": "3",
+            "descripcion": "ACOGINADA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 42,
+        "fields": {
+            "cveclasifservicio": 50,
+            "cvedesgloseservicio": "1",
+            "descripcion": "DE LEDS",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    },
+    {
+        "model": "salones.desgloseservicio",
+        "pk": 43,
+        "fields": {
+            "cveclasifservicio": 50,
+            "cvedesgloseservicio": "2",
+            "descripcion": "DE TELA",
+            "bandactivo": true,
+            "datelastupdate": "2022-12-29T11:36:28.502Z"
+        }
+    }
+]

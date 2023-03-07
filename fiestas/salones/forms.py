@@ -65,7 +65,7 @@ class DetalleEventoForm(ModelForm):
     class Meta:
         model = DetEvento
         fields = ['cvetipoactividad','cvetiposervicio',
-        'cveclasifservicio','cvedesgloseservicio', 'costo', 'proveedor',
+        'cveclasifservicio','cvedesgloseservicio', 'precio','costo', 'proveedor',
         'fecha','tiempo','estatus','nota', 
         ]
 

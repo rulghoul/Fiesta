@@ -206,10 +206,11 @@ class DetEvento(models.Model):
     cveclasifservicio = models.ForeignKey('ClasifServicio', models.DO_NOTHING, db_column='CveClasifServicio', verbose_name='Clasificacion')  
     cvetiposervicio = models.ForeignKey('TipoServicio', models.DO_NOTHING, db_column='CveTipoServicio', verbose_name='Servicio')  
     costo = models.FloatField(db_column='Costo', blank=True, null=True, verbose_name='Costo')  
+    precio = models.FloatField(db_column='Precio', blank=True, null=True, verbose_name='Precio')
     fecha = models.DateTimeField(db_column='Fecha', blank=True, null=True, verbose_name='Fecha')  
     tiempo = models.PositiveSmallIntegerField(db_column='Tiempo', null=True, blank=False, default=None,  verbose_name='Tiempo')
     estatus = models.ForeignKey(EstatusActividad, models.DO_NOTHING, db_column='CveEstatus', null=True, default=None, verbose_name='Estatus')
-    nota = models.CharField(db_column='Notas', null= True, blank=True, default=None, max_length=100,  verbose_name='Notas')
+    nota = models.CharField(db_column='Notas', null= True, blank=True, default=None, max_length=200,  verbose_name='Notas')
     history = HistoricalRecords()
 
     class Meta:
@@ -247,11 +248,7 @@ class parametros_colores(models.Model):
 
 class parametros_imagenes(models.Model):
     title = models.CharField(max_length=60, default='', blank=True)
-    description = models.TextField(max_length=200, default='', blank=True)
-    width = models.IntegerField(default=0)
-    height = models.IntegerField(default=0)
-    image = models.ImageField(width_field="width", height_field="height")
-    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    image = models.ImageField(upload_to='images_parameter')
 
     def __str__(self):
         return self.title

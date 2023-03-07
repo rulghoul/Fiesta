@@ -117,47 +117,47 @@ class list_color(ListView):
 ####### Parametros de imagenes #########
 
 
-class add_parametro_imagen(CreateView):
+class add_imagen(CreateView):
     model = parametros_imagenes
-    success_url = reverse_lazy('list_color')
-    fields = ['elemento', 'color']
-    template_name = 'salones/catalogos/add.html'
+    success_url = reverse_lazy('list_imagenes')
+    fields = ['title', 'image',]
+    template_name = 'salones/parametros/add.html'
     
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
-        context['titulo'] = "Nuevo Color"
-        context['regresa'] = 'list_color'
+        context['titulo'] = "Nueva Imagen"
+        context['regresa'] = 'list_imagenes'
         return context
 
-class update_parametro_imagen(UpdateView):
+class update_imagen(UpdateView):
     model = parametros_imagenes
-    fields = ['elemento', 'color']
-    success_url = reverse_lazy('list_color')
-    template_name = 'salones/catalogos/update.html'
+    fields = ['title', 'image',]
+    success_url = reverse_lazy('list_imagenes')
+    template_name = 'salones/parametros/update.html'
     
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
-        context['titulo'] = "Actualiza Color"
-        context['regresa'] = 'list_color'
+        context['titulo'] = "Actualiza Imagen"
+        context['regresa'] = 'list_imagen'
         return context
 
 
-class list_parametro_imagen(ListView):
+class list_imagen(ListView):
     model = parametros_imagenes
-    template_name = ('salones/parametros/listColor.html')
+    template_name = ('salones/parametros/listImagenes.html')
 
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
         # Add in a QuerySet of all the books
         datos = {
-            'titulo': "Colores",
-            'add':"add_color",
-            'add_label':'Nuevo color',
-            'update':'update_color',    
-            'encabezados': {"elemento":'Elemento',"color":"Color"},
+            'titulo': "Parametros Imagenes",
+            'add':"add_imagen",
+            'add_label':'Nueva imagen',
+            'update':'update_imagen',    
+            'encabezados': {"title":'Nombre',"image":"Imagen"},
         }
         context.update(datos)
         return context

@@ -1,5 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
 
 from django.views.generic.base import TemplateView
 from salones.views.catalogos01 import (
@@ -14,7 +16,7 @@ from salones.views.catalogos01 import (
     personas, add_cliente, detalle_persona, borra_persona, update_cliente,
     load_clases_servicio, load_desglose_servicio,
     add_color, update_color, list_color,
-    add_parametro_imagen, update_parametro_imagen, list_parametro_imagen,
+    add_imagen, update_imagen, list_imagen,
     generate_pdf,
 )
 
@@ -94,6 +96,12 @@ path_colores = [
     path(f'{inicio}list_color', list_color.as_view(), name='list_color'),
 ]
 
+path_imagen = [
+    path(f'{inicio}add_imagen', add_imagen.as_view(), name='add_imagen'),
+    path(f'{inicio}update_imagen/<int:pk>/', update_imagen.as_view(), name='update_imagen'),
+    path(f'{inicio}list_imagen', list_imagen.as_view(), name='list_imagen'),
+]
+
 path_reporte = [
     path(f'{inicio}generate_pdf/<int:pk>/', generate_pdf, name='generate_pdf'),    
 ]
@@ -110,7 +118,8 @@ urlpatterns = [
     path(f'{inicio}api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     #termina la parte rest
 
-] + path_tipo_actividades  \
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
++ path_tipo_actividades  \
 + path_tipo_eventos \
 + path_tipo_servicios \
 + path_tipo_personas \
@@ -119,5 +128,6 @@ urlpatterns = [
 + path_evento_detalle \
 + path_dropdown \
 + path_colores \
++ path_imagen \
 + path_reporte #\
 

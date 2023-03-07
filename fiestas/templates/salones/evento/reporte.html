@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <h1>{{ evento }}</h1>
+    <h1>{{ evento.nombre }} para el cliente {{ evento.cvepersona}}</h1>
     <table>
         <tr>
             <td colspan="4">
@@ -60,7 +60,7 @@
                 <p><strong>Telefono primario:</strong> {{ evento.cvepersona.telefono1 }}</p>
             </td>
             <td>
-                <p><strong>Telefono alternativo:</strong> {{ evento.cvepersona.telefono2 }}</p>
+                <p><strong>Telefono alternativo:</strong> {{ evento.cvepersona.telefono2|default_if_none:"NA" }}</p>
             </td>
         </tr>
     </table>
@@ -74,8 +74,7 @@
                 <th>Clasificacion</th>
                 <th>Desglose</th>
                 <th>tiempo</th>
-                <th>Estatus</th>
-                <th>Costo</th>
+                <th>Precio</th>
             </tr>
         </thead>
         <tbody>
@@ -87,17 +86,17 @@
                 <td>{{ fila.cveclasifservicio }}</td>
                 <td>{{ fila.cvedesgloseservicio|default_if_none:"NA" }}</td>
                 <td>{{ fila.tiempo }}</td>
-                <td>{{ fila.estatus }}</td>
-                <td>${{ fila.costo }}</td>
+                <td>${{ fila.precio }}</td>
             </tr>
             {% if fila.nota %}
             <tr>
-                <td colspan="8">{{ fila.nota }}</td>
+                <td colspan="7">{{ fila.nota }}</td>
             </tr>
             {% endif %}
             {% endfor %}
             <tr>
-                <td colspan="7">Total:</td>
+                <td colspan="5"></td>
+                <td colspan="1">Total:</td>
                 <td colspan="1">${{ total }}</td>
             </tr>
         </tbody>

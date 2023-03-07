@@ -60,6 +60,7 @@
                     <th>Desglose</th>
                     <th>Tiempo</th>
                     <th>Costo</th>
+                    <th>Precio</th>
                     <th>Estatus</th>
                     <th></th>
                 </tr>
@@ -67,13 +68,14 @@
             <tbody id="CuerpoCatalogo">
                 {% for detalle in detalles %}
                 <tr>
-                    <td>{{ detalle.fecha|date:"d \d\e E \d\e\l Y" }}</td>
+                    <td>{{ detalle.fecha|date:"d/m/Y" }}</td>
                     <td>{{ detalle.cvetipoactividad }}</td>
                     <td>{{ detalle.cvetiposervicio }}</td>
                     <td>{{ detalle.cveclasifservicio }}</td>
                     <td>{{ detalle.cvedesgloseservicio }}</td>
                     <td>{{ detalle.tiempo }}</td>
                     <td>${{ detalle.costo }}</td>
+                    <td>${{ detalle.precio }}</td>
                     <td>{{ detalle.estatus }}</td>
                     <td class="text-center">
                         <!-- Read book buttons -->

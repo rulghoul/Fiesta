@@ -17,6 +17,8 @@ from salones.views.catalogos01 import (
     load_clases_servicio, load_desglose_servicio,
     add_color, update_color, list_color,
     add_imagen, update_imagen, list_imagen,
+    update_clasificacion_servicio, add_clasificacion_servicio, clasificacion_servicio_lista,borra_clasificacion_servicio,
+    update_desglose_servicio, add_desglose_servicio, desglose_servicio_lista,borra_desglose_servicio,
     generate_pdf,
 )
 
@@ -52,6 +54,20 @@ path_tipo_servicios = [
     path(f'{inicio}detalle_servicio/<int:pk>', detalle_servicio.as_view(), name='detalle_servicio'),
     path(f'{inicio}servicio/<int:id_servicio>/', update_servicio, name='update_servicio'),
     path(f'{inicio}borra_servicio/<int:pk>/', borra_servicio.as_view(), name='borra_servivio'),
+]
+
+path_clasificacion_servicio = [
+    path(f'{inicio}clasificacion_servicio_lista', clasificacion_servicio_lista.as_view(), name='clasificacion_servicio_lista'),
+    path(f'{inicio}add_clasificacion_servicio/', add_clasificacion_servicio.as_view(), name='add_clasificacion_servicio'),
+    path(f'{inicio}update_clasificacion_servicio/<int:pk>/', update_clasificacion_servicio.as_view(), name='update_clasificacion_servicio'),
+    path(f'{inicio}borra_clasificacion_servicio/<int:pk>/', borra_clasificacion_servicio.as_view(), name='borra_clasificacion_servicio'),
+]
+
+path_desglose_servicio = [
+    path(f'{inicio}desglose_servicio_lista', desglose_servicio_lista.as_view(), name='desglose_servicio_lista'),
+    path(f'{inicio}add_desglose_servicio/', add_desglose_servicio.as_view(), name='add_desglose_servicio'),
+    path(f'{inicio}update_desglose_servicio/<int:pk>/', update_desglose_servicio.as_view(), name='update_desglose_servicio'),
+    path(f'{inicio}borra_desglose_servicio/<int:pk>/', borra_desglose_servicio.as_view(), name='borra_desglose_servicio'),
 ]
 
 path_tipo_personas = [
@@ -106,6 +122,8 @@ path_reporte = [
     path(f'{inicio}generate_pdf/<int:pk>/', generate_pdf, name='generate_pdf'),    
 ]
 
+
+
 urlpatterns = [
 
     path(f'{inicio}', home_view, name='home'),    
@@ -122,6 +140,8 @@ urlpatterns = [
 + path_tipo_actividades  \
 + path_tipo_eventos \
 + path_tipo_servicios \
++ path_clasificacion_servicio \
++ path_desglose_servicio \
 + path_tipo_personas \
 + path_personas \
 + path_eventos \

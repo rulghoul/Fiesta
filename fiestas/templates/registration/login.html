@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block title %}Login{% endblock %} {% block content %}
 {% load static %}
+
+{% load colores_del_sitio %}
 <style>
 		.brand_logo_container {
 			position: relative;
@@ -22,7 +24,7 @@
   <div class="d-flex justify-content-center">
     <div class="brand_logo_container">
       <img
-        src="{% static 'admin/fiesta500.png' %}" 
+        src="{% get_imagen 'bigLogo' %}"
         class="brand_logo"
         alt="Logo"
       />

@@ -31,7 +31,6 @@ def user_login(request):
         # No post data availabe, let's just show the page to the user.
         return render(request, 'salones/login.html')
 
-@login_required
 def home_view(request):   
     template = loader.get_template('home.html')
     colores = parametros_colores.objects.all().order_by('elemento').values()

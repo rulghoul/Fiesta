@@ -13,8 +13,8 @@ def get_color(nombre):
 
 @register.simple_tag
 def get_imagen(nombre):
-    imagen = parametros_imagenes.objects.filter(title=nombre).first()
-    if not imagen:
+    momo = parametros_imagenes.objects.filter(title=nombre).first()
+    if not momo:
         return f"No se encontro la imagen con el titulo {nombre}"
     else:
-        return imagen
+        return momo.image.url

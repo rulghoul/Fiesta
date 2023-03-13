@@ -83,9 +83,7 @@ class desglose_servicio_lista(ListView):
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
         # Add in a QuerySet of all the books
-        lista = TipoPersona.objects.all().order_by('clave').values()
         datos = {
-            'lista': lista,
             'titulo': "Desglose de Servicio",
             'add':"add_desglose_servicio",
             'add_label':'Nuevo desglose de servicio',
@@ -112,7 +110,7 @@ class add_desglose_servicio(CreateView):
 
 class update_desglose_servicio(UpdateView):
     model = DesgloseServicio
-    fields = ['elemento', 'color']
+    fields = ['cveclasifservicio', 'cvedesgloseservicio', 'descripcion', 'bandactivo']
     success_url = reverse_lazy('desglose_servicio_lista')
     template_name = 'salones/catalogos/update.html'
     

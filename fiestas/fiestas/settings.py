@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-pa!@2qs9a1$pf=3#!vxiat=6v%(*nwitti*j@w+k)ji%df0*+*"
+SECRET_KEY = os.environ.get("EVENTOS_SECRET_KEY","django-insecure-pa!@2qs9a1$pf=3#!vxiat=6v%(*nwitti*j@w+k)ji%df0*+*")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -87,12 +87,12 @@ WSGI_APPLICATION = "fiestas.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'rulghoul_proyecto',
-        'USER': 'rulghoul',
-        'PASSWORD': 'Kenqsduldc843',
-        'HOST': '127.0.0.1',   # Or an IP Address that your DB is hosted on
-        'PORT': '3360',
+        "ENGINE": os.environ.get("EVENTOS_SQL_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("EVENTOS_SQL_DATABASE", BASE_DIR / "db.sqlite3"),
+        "USER": os.environ.get("EVENTOS_SQL_USER", "user"),
+        "PASSWORD": os.environ.get("EVENTOS_SQL_PASSWORD", "password"),
+        "HOST": os.environ.get("EVENTOS_SQL_HOST", "localhost"),
+        "PORT": os.environ.get("EVENTOS_SQL_PORT", "5432"),
         'OPTIONS': {
             'sql_mode': 'STRICT_TRANS_TABLES',
         },

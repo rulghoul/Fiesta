@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("EVENTOS_SECRET_KEY","django-insecure-pa!@2qs9a1$pf=3#!vxiat=6v%(*nwitti*j@w+k)ji%df0*+*")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 

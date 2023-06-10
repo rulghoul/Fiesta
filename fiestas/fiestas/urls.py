@@ -33,7 +33,7 @@ router.register(r'servicios', ServicioViewSet)
 inicio = ''
 
 path_tipo_actividades = [
-    path(f'{inicio}muestra/lista_actividad', lista_actividad, name='lista_actividad'),
+    path(f'{inicio}/lista_actividad', lista_actividad, name='lista_actividad'),
     path(f'{inicio}add_actividad/', add_actividad, name='add_salon'),
     path(f'{inicio}detalle_actividad/<int:pk>', detalle_actividad.as_view(), name='detalle_actividad'),
     path(f'{inicio}actividad/<int:id_actividad>/', update_actividad, name='update_actividad'),
@@ -102,8 +102,8 @@ path_evento_detalle = [
 ]
 
 path_dropdown = [
-    path('ajax/load_clases_servicio/', load_clases_servicio, name='ajax_load_clases_servicio'), 
-    path('ajax/load_desglose_servicio/', load_desglose_servicio, name='ajax_load_desglose_servicio'), 
+    path(f'{inicio}ajax/load_clases_servicio/', load_clases_servicio, name='ajax_load_clases_servicio'), 
+    path(f'{inicio}ajax/load_desglose_servicio/', load_desglose_servicio, name='ajax_load_desglose_servicio'), 
 ]
 
 path_colores = [

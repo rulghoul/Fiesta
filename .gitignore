@@ -1,5 +1,7 @@
 /requirements.txt
 /virtual
+/run
+/logs
 
 *.log
 *.pot

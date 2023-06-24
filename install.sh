@@ -3,6 +3,12 @@
 python3 -m venv virtual
 source virtual/bin/activate
 pip3 install -r requirements.txt
+cd fiestas
+python3 manage.py migrate
+python3 manage.py createsuperuser
+python3 mage.py loaddata inicio.json
+python3 mage.py loaddata catalogos02.json
+cd ..
 deactivate
 
 #Crear Usuario y asignar permisos

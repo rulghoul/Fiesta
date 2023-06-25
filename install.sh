@@ -1,16 +1,12 @@
 #!/bin/bash
-#Crear entorno virtual y descargar las librerias
-python3 -m venv virtual
-source virtual/bin/activate
-pip3 install -r requirements.txt
-cd fiestas
-python3 manage.py migrate
-python3 manage.py collectstatic
-python3 manage.py createsuperuser
-python3 mage.py loaddata inicio.json
-python3 mage.py loaddata catalogos02.json
-cd ..
-deactivate
+
+# Variables Eventos
+export EVENTOS_SQL_ENGINE="django.db.backends.mysql"
+export EVENTOS_SQL_DATABASE="eventos"
+export EVENTOS_SQL_USER="eventos"
+export EVENTOS_SQL_PASSWORD="eventosdjango"
+export EVENTOS_SQL_HOST="127.0.0.1"
+export EVENTOS_SQL_PORT="3306"
 
 #Crear Usuario y asignar permisos
 groupadd --system webapps
@@ -27,11 +23,6 @@ DB_USER="root"
 DB_PASSWORD=""
 echo "Ingrese la contraseña para la conexión a la base de datos:"
 
-#Eventos
-EVENTOS_SQL_DATABASE="eventos"
-EVENTOS_SQL_USER="eventos"
-EVENTOS_SQL_PASSWORD="eventosdjango"
-
 read -s DB_PASSWORD
 
 # Comandos SQL para crear bases de datos y usuarios
@@ -41,6 +32,22 @@ SQL1+="GRANT ALL PRIVILEGES ON $EVENTOS_SQL_DATABASE.* TO '$EVENTOS_SQL_USER'@'$
 echo "Bases de datos y usuarios creados correctamente."
 
 mysql -h $DB_HOST -u $DB_USER -p$DB_PASSWORD -e "$SQL1" || exit 1
+
+
+#Crear entorno virtual y descargar las librerias
+python3 -m venv virtual
+source virtual/bin/activate
+pip3 install -r requirements.txt
+cd fiestas
+python3 manage.py migrate
+python3 manage.py collectstatic
+python3 manage.py createsuperuser
+python3 mage.py loaddata inicio.json
+python3 mage.py loaddata catalogos02.json
+cd ..
+deactivate
+mkdir logs
+mkdir run
 
 #Instalar supervisor
 

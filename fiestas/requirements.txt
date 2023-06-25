@@ -20,3 +20,4 @@ xhtml2pdf==0.2.9
 django-colorfield==0.9.0
 django-ckeditor==6.6.1
 django-betterforms==2.0.0
+gunicorn==20.1.0
